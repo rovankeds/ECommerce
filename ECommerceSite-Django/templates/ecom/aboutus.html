@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tasha Collections</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">Tasha Collections offers a wide range of high-end fashions at low Prices, accessories and lifestyle products. It is Online based platform Providing seamless shopping experience. Items like Jeans, cargo  pants, dresses, Office pants, Crop tops, bags, Sandals, jewelries among others. We Prioritize customer satisfaction  and aim to build long lasting relationships based on  true and mutual  respect. 
+  <br>Explore a world of sartorial splendor with our handpicked selection of chic ensembles and runway-inspired looks. Whether you're seeking glamour, sophistication, or laid-back charm, our collection has something for every mood and occasion. But here's the catch – these incredible deals won't last long. So, dive in, shop smart, and let your style shine bright! </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>
